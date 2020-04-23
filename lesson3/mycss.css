@@ -1,0 +1,40 @@
+body{
+    width: 90%;
+    background-image: url("background.png");
+}
+.mainpart{
+    width: 795px;
+    text-align: center;
+}
+.banner{
+text-align: center;
+width: 100%;
+background-repeat: repeat-x;
+}
+.headertext{
+    text-align: center;
+}
+.validators{
+float: right;
+clear: left;
+}
+.overviewimg{
+    float: right;
+}
+.director{
+    float: right;
+   width: 250px;
+   clear: right;
+   text-align: left;
+   background-color: darkgreen;
+}
+.overviewimg{
+    float: right;
+}
+.ditching{
+    float: left;
+    width: 100px;
+}
+.turtiles{
+  width: 100px;
+}
