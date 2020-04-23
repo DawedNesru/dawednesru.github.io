@@ -1,0 +1,89 @@
+#outer {
+    border: 2px dashed black;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .box {
+      float: left;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+  }
+  .break{
+      clear: left;
+  }
+ul {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
+  ul li{
+      display: inline;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid black;
+  }
+.wrapper{
+    overflow: hidden;
+    width:500px;
+    background-color: lightgray;
+    padding: 5px;
+}
+  .column1, .column2{
+      width: 100px;
+      float: right;
+      background-color: lightblue;
+      
+  }
+.headpart{
+   
+    background-color: yellow;
+}
+
+/*, #a12, #b12, #a13, #b13, #a21, #b21*/
+#a, #b, #d, #e, #g, #h {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 5px 0;
+    padding: 5px;
+  }
+
+  .containera, .containerb, .containerc{
+      margin: 5px;
+      padding-bottom: 35px;
+  }
+  .containerc{
+      clear: right;
+  }
+  #a { background-color: lightblue; float: left;}
+  #b { background-color: pink; float:right; }
+  #c { background-color: lightgray;    margin-bottom: 5px; }
+
+
+  #d { background-color: lightblue; float: left;}
+  #e { background-color: pink; float:right; clear: left;}
+  #f { background-color: lightgray;    margin-bottom: 5px;}
+
+  #g { background-color: lightblue; float: left;}
+  #h { background-color: pink; float:right; clear: left;}
+  #i { background-color: lightgray;  clear: left;}
+
+
+  #j { background-color: lightblue; float: left;}
+  #k { background-color: pink; float:right;}
+  #l { background-color: lightgray; }
+
+  #m { background-color: lightblue; float: left;}
+  #n { background-color: pink; float:right;}
+  #o { background-color: lightgray; }
+
+  #p { background-color: lightblue; float: left;}
+  #q { background-color: pink; float:right;}
+  #r { background-color: lightgray; }
+
+
