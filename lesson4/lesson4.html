@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+h1{
+    background-color:lightseagreen;
+}
+.left  {
+    float:left;
+  width:20%;
+  padding:0 20px;
+  background-color:lightslategrey;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+  background-color:limegreen
+}
+.right {
+    float:left;
+  width:20%;
+  padding:0 20px;
+  background-color:mediumpurple
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: darkslategrey;
+  text-align: center;
+ font-size: 30px;
+  left:10px;
+  bottom:10px;
+   
+}
+
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+  .right {
+    width:100%;
+  }
+}
+ul {
+    background-color: darkslategrey;
+    text-align: center;
+    padding: 20px;
+}
+  ul li{
+      display: inline;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid black;
+  }
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:lightseagreen;padding:15px;text-align:center;">
+  <h1>Header</h1>
+</div>
+<div>
+
+    <ul class = "listitem">
+      <li>Menu1</li>
+      <li>Menu2</li>
+      <li>Menu3</li>
+      <li><a href ="../index.html">   Home</a></li>
+    </ul>
+  </div>
+<div style="overflow:auto">
+  <div class="left">
+    <h2>column 1</h2>
+    London
+London is the capital city of England.
+
+It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+
+Paris
+Paris is the capital of France.
+
+The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.
+
+Tokyo
+Tokyo is the capital of Japan.
+
+It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.
+  </div>
+
+  <div class="main">
+    <h2>column 2</h2>
+    London
+London is the capital city of England.
+
+It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+
+Paris
+Paris is the capital of France.
+
+The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.
+
+Tokyo
+Tokyo is the capital of Japan.
+
+It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.
+  
+  </div>
+
+  <div class="right">
+    <h2>Column 3</h2>
+    London
+    London is the capital city of England.
+    
+    It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+    
+    Paris
+    Paris is the capital of France.
+    
+    The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.
+    
+    Tokyo
+    Tokyo is the capital of Japan.
+    
+    It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.
+  </div>
+</div>
+
+<div class="footer">
+  Footer
+   
+  </div>
+
+</body>
+</html>

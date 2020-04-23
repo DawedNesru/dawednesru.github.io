@@ -4,23 +4,55 @@
         <meta charset="utf-8">
         <title>this is good new</title>
         <style>
-            .first{
-                float: right;
-            }
-            .second{
-                float: right;
-            }
+           div, p {
+ color: aqua;
+ background-color: red;
+}
+
+ #main p {
+ color: yellow;
+ background-color: indigo;
+}
+
+span{
+ color: gray;
+}
+
+.primary {
+ color: tomato;
+ background-color: chocolate;
+}
+
+p.primary {
+ color: coral;
+}
+
+#third p {
+ color: plum;
+ background-color: darkgreen;
+}
+
+ul>li>p {
+ color: PowderBlue;
+ background-color: peachpuff;
+}
+
            
         </style>
     </head>
     <body>
-        <div>hddddo</div>
-        <div> 
-        <div class = "first"> first row     
-            <div>hi gus</div>
-        </div> 
-        <div class = "second">second row    <div>hi gus</div>  </div>
-        <div class = "third">third row     <div>hi gus </div>  <div>hi gus</div> <div>hi gus</div> <div>hi gus</div> </div>
-        </div>
+        <div id="main">
+            <p class="primary">One</p>
+            <div>
+            <div class="spaceships">
+            <p class="primary">Two</p>
+            <ul>
+            <li id="third">
+            <p>Three</p>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
     </body>
 </html>
