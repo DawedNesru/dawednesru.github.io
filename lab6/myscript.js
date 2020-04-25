@@ -1,0 +1,179 @@
+
+
+//This is to give information to the user when he/she visits the website
+function headline(){
+    alert("please, choose what i want to do first from the radio button")
+}
+
+
+//this is to display the max of two numbers
+function maxOfTwo(){
+    var x = document.getElementById("firstmaxtwo").value;
+    var y = document.getElementById("secondmaxtwo").value;
+    if(x > y)
+alert(x + "is greater than " + y);
+else  if(x < y)
+alert(y + " is greater than " + x);
+else{
+    alert("both are equal");
+}
+}
+
+
+//this is to display the max of three numbers
+function maxOfThree(){
+    var x = document.getElementById("firstmaxthree").value;
+    var y = document.getElementById("secondmaxthree").value;
+    var z = document.getElementById("thirdmaxthree").value;
+    if(x > y)
+    {
+        if(x > z){
+            alert(x + " is the greatest of all");
+        }
+        else
+        if(z > y){
+            alert(z + " is the greatest of all");
+        }
+    }
+
+    else if(y > z)
+    {
+        alert(y + " is the greatest of all");
+    }
+else    alert(z + " is the greatest of all");
+}
+
+function isVowel(){
+    var z = document.getElementById("lettercheck").value;
+    const vowelslt = ['a', 'e', 'i', 'o', 'u'];
+    var flag = 0;
+    if(z.length > 1)
+    {
+        alert("please enter only one character");
+    }
+   
+    else
+    {
+        for(let i = 0; i < vowelslt.length; i++){
+        if(z === vowelslt[i])
+       flag = 1;
+        else if(z === 'y')
+        flag = 2;
+        else
+       flag = 0;
+        }
+    }
+
+    if(flag === 1)
+    alert("this letter is a vowel");
+    else   if(flag === 2)
+    alert("we are confused about this letter. Y/y is sometimes vowel and sometimes Consonant");
+    else
+    alert("this letter is Consonant")
+}
+
+
+
+
+//this is to display the sum of array elements
+function sumUp(){
+    const nums = document.getElementById("list").value;
+  const  values = nums.split(',');
+ 
+var sum = 0;
+  for(let i = 0; i < values.length; i++){
+    
+  sum += parseInt(values[i]);
+}
+alert(sum);
+}
+
+
+//this is to display the product of array elements
+function product2(){
+    const nums2 = document.getElementById("list2").value;
+  const  values = nums2.split(',');
+ 
+var prod = 1;
+  for(let i = 0; i < values.length; i++){
+     prod *= values[i];
+}
+alert(prod);
+}
+
+function reverseIt(){
+    var str = document.getElementById("reversible").value;
+    var rev ="";
+    for(var j = str.length; j >= 0;  j--){
+        rev += str.charAt(j); 
+    }
+    alert(rev);
+}
+
+//this is to return the longest word
+function longerWordValue(){
+    const str = document.getElementById("longestcheck").value;
+    const splitStr = str.split(",");
+    var max = splitStr[0].length;
+    var lo = splitStr[0];
+    for(let k = 1; k < splitStr.length; k++){
+        if(max < splitStr[k].length){
+            max = splitStr[k].length;
+              lo = splitStr[k]
+          }
+    }
+
+   alert(lo);
+}
+
+
+//this is to return the index of the longest word
+function findLongestWord(){
+    const str = document.getElementById("longestcheck").value;
+    const splitStr = str.split(",");
+    var max = splitStr[0].length;
+    var lo = 0
+    for(let k = 1; k < splitStr.length; k++){
+          if(max < splitStr[k].length){
+              max = splitStr[k].length;
+              lo = k
+          }
+    }
+
+   alert(lo);
+}
+
+//this is to return the array whose length are specified
+function filterLongWords(){
+    const str = document.getElementById("longestcheck").value;
+    const sss = document.getElementById("ivalue").value;
+    const splitStr = str.split(",");
+     var lo=[];
+    for(let k = 0, j = 0; k < splitStr.length; k++){
+          if(sss < splitStr[k].length){
+            lo[j] = splitStr[k];
+            j++;
+          }
+    }
+
+alert(lo);
+}
+
+// this function is about all three questions regarding stream types
+function streamTasks(x){
+    const a = [1,3,5,3,3]; 
+    var b;
+    if(x === 1){
+       b = a.map(function(elem, i, array) {
+            return elem * 10;})// [4,6,8,6,6]
+    }
+  else  if(x === 2){
+         b = a.filter(function(elem, i, array) {
+            return elem === 3;})
+    }
+    else  if(x === 3){
+         b = a.reduce(function(prevVal, elem){
+            return prevVal * elem;}, 1);
+    }
+    alert(b);
+}
