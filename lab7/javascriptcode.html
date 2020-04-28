@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>This is the javascript Assignment</title>
+        <link rel="stylesheet"  href="mystyle.css">
+        <script src="myscript.js"></script>
+    </head>
+    <body >
+      <div><a href ="../index.html">   Home</a></div>  
+        <div><form action="home.jsp">
+            <div>
+            <input type="radio" name="tasks" value="Max of Two Numbers"> Max of Two Numbers<br>
+            <input type="radio" name="tasks" value="Max of Three Numbers"> Max of Three Numbers<br>
+            <input type="radio" name="tasks" value="Is the letter a Vowel"> Is the letter a Vowel
+          </div>
+          <hr>
+        <div>
+           
+            <div ><label>First Number</label></div>
+<div><input type="text" id = "firstmaxtwo" name="first" placeholder="number only "></div>
+            <div ><label>Second Number</label></div>
+            <div><input type="text" id = "secondmaxtwo" name="second" placeholder="number only "></div>
+            
+            <div><input type="button" onclick="maxOfTwo()" value="Max"></div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div>
+            <div ><label>First Number</label></div>
+<div><input type="text" name="first" id="firstmaxthree" placeholder="number only "></div>
+            <div ><label>Second Number</label></div>
+            <div><input type="text" id="secondmaxthree" name="second" placeholder="number only "></div>
+            <div ><label>Third Number</label></div>
+            <div><input type="text"  id="thirdmaxthree" name="third" placeholder="number only "></div>
+            <div><input type="button" onclick="maxOfThree()" value="Max"></div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div>
+            <div ><label>Enter Letter</label></div>
+            <div><input type="text" id = "lettercheck" name="lettercheck" placeholder="one letter only "></div>
+            <div><input type="button" onclick="isVowel()" value="IsVowel?"></div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div>
+            <div ><label>Enter Comma Separated numbers to sum up</label></div>
+            <div><input type="text" id = "list" name="sumup" placeholder="only comma separated numbers "></div>
+            <div><input type="button" onclick="sumUp()" value="Sum"></div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div>
+            <div ><label>Enter Comma Separated numbers to get the product</label></div>
+            <div><input type="text" id = "list2" name="product" placeholder="only comma separated numbers "></div>
+            <div><input type="button" onclick="product2()" value="Product"></div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div>
+            <div ><label>Enter a word</label></div>
+            <div><input type="text" id = "reversible" name="reverse" placeholder="Enter any word "></div>
+            <div><input type="button" onclick="reverseIt()" value="Reverse"></div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div>
+            <div ><label>Enter Comma Separated words to get the longest one</label></div>
+            <div><input type="text" name="longest" id="longestcheck" placeholder="comma separated words "></div>
+                <div ><label>Enter the length of the string you want to see</label></div>
+            <div>    <input type="text" name="longest2" id="ivalue" placeholder="enter the length in num "></div>
+            <div><input type="button" onclick="longerWordValue()" value="Longer Word"></div>
+            <div><input type="button" onClick="findLongestWord()" value="LongestIndex">
+                <input type="button" onClick="filterLongWords()" value="Longer than I"></div>
+            <div></div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div> <div><input type="button" onclick="streamTasks(1)" value=" Multiply by 10"></div>
+        <div><input type="button" onClick="streamTasks(2)" value="Only equal to 3">
+            <input type="button" onClick="streamTasks(3)" value="product of all"></div></div>
+   </form>
+</div>
+  
+    </body>
+</html>
