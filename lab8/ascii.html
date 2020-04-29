@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Text Decorator</title>
+        <link href="ascii.css"  rel="stylesheet" />
+        <script src="ascii.js"></script>
+		<!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+
+		<!-- link to your script file here -->
+		
+	</head>
+
+	<body>
+       <div><a href ="../index.html">   Home</a></div>
+        <div class="header"> CS472: ASCII Animation Viewer</div>
+        <div class="container">
+    <fieldset>
+        <legend>Text:</legend>
+        <textarea id="displayarea" style="font-size: 12px;" rows="4" cols="30"></textarea>
+        </fieldset>
+    </div>
+
+<div class="sides">
+        <fieldset >
+            <legend style = "font-weight: bolder;">Play Controls</legend>
+        <div><input type="button" id = "startgame" onclick="startgame()" value="Start"/>
+        <input type="button" id = "stopgame" onclick="stopaction()" value="Stop"/></div>
+            </fieldset>
+        </div>
+        <div class="sides">
+            
+
+
+
+
+
+     <fieldset>
+                <legend style = "font-weight: bolder;">Animation</legend>
+            <div><select name="structinfo" id = "select" onchange="changemode()">
+                <option>Dive</option>
+                <option selected>Blank</option>
+                <option>Custom</option>
+                <option>Exercise</option>
+                <option>Juggler</option>
+                <option>Bike</option>
+               
+                </select></div>
+           
+                </fieldset>
+            </div>
+            <div class="sides">
+                <fieldset>
+                    <legend style = "font-weight: bolder;">Size</legend>
+                    <div><select name="sizeinfo">
+                        <option>Small</option>
+                        <option selected>Medium</option>
+                        <option>Large</option>
+                         </select></div>
+                   
+                        </fieldset>
+                    </div>
+               
+                   
+                
+                <div class="sides">
+                    <fieldset>
+                        <legend style = "font-weight: bolder;">Speed</legend>
+                    <div><input type="checkbox" id = "makeme" onclick="display()" value="turbo"/>Turbo </div>
+                   
+                        </fieldset>
+                    </div>
+               
+<div style = "float: right;">
+<p>
+<a href="http://validator.w3.org/check/referer">
+<img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate"
+/>
+</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img src=http://jigsaw.w3.org/css-validator/images/vcss alt="Valid CSS!"/>
+</a>
+
+
+</p>
+</div>
+</body>
+</html>
