@@ -1,0 +1,15 @@
+{
+  "name": "mytest",
+  "version": "1.0.0",
+  "description": "just testing",
+  "main": "hello.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
+  }
+}
